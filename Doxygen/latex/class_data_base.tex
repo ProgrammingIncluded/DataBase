@@ -1,0 +1,72 @@
+\hypertarget{class_data_base}{\section{Data\-Base Class Reference}
+\label{class_data_base}\index{Data\-Base@{Data\-Base}}
+}
+
+
+Class for My\-Sqli static helper functions.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_data_base_a2c79a02715a9f67b6f50f20a221fde39}{get\-Result} (\$sql, \$table, \$id, \$id\-Val)
+\item 
+static \hyperlink{class_data_base_ac35c457c4a3fd02713f4c793897e4d38}{connect\-My\-S\-Q\-L} (\$user, \$database)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{Indent}{\bf Constant S\-Q\-L Variables}\par
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{class_data_base_a657433cc10254cb11103d5ca366a5a6d}{host} = \char`\"{}localhost\char`\"{}
+\begin{DoxyCompactList}\small\item\em Hard coded S\-Q\-L variable for connection. \end{DoxyCompactList}\item 
+const \hyperlink{class_data_base_afea42faad022b77d80bc1c081dad5815}{pass} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em Hard coded S\-Q\-L variable for connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Class for My\-Sqli static helper functions. 
+
+Helper functions does things that My\-Sli does not support natively. Such as getting array results instead of single values. Also has a custom connection function used for P\-H\-P websites. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_data_base_ac35c457c4a3fd02713f4c793897e4d38}{\index{Data\-Base@{Data\-Base}!connect\-My\-S\-Q\-L@{connect\-My\-S\-Q\-L}}
+\index{connect\-My\-S\-Q\-L@{connect\-My\-S\-Q\-L}!DataBase@{Data\-Base}}
+\subsubsection[{connect\-My\-S\-Q\-L}]{\setlength{\rightskip}{0pt plus 5cm}static connect\-My\-S\-Q\-L (
+\begin{DoxyParamCaption}
+\item[{}]{\$user, }
+\item[{}]{\$database}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_data_base_ac35c457c4a3fd02713f4c793897e4d38}
+Connects to My\-S\-Q\-L given a user and data. Returns Mysli object. host and password is hard coded. Mainly because of security and modularity. \hypertarget{class_data_base_a2c79a02715a9f67b6f50f20a221fde39}{\index{Data\-Base@{Data\-Base}!get\-Result@{get\-Result}}
+\index{get\-Result@{get\-Result}!DataBase@{Data\-Base}}
+\subsubsection[{get\-Result}]{\setlength{\rightskip}{0pt plus 5cm}static get\-Result (
+\begin{DoxyParamCaption}
+\item[{}]{\$sql, }
+\item[{}]{\$table, }
+\item[{}]{\$id, }
+\item[{}]{\$id\-Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_data_base_a2c79a02715a9f67b6f50f20a221fde39}
+Return an array of data from S\-Q\-L. Key are values from S\-Q\-L. In array, returns all data in S\-Q\-L except for \$id key and value. It is very redundant to return the value in which you passed. 
+
+\subsection{Field Documentation}
+\hypertarget{class_data_base_a657433cc10254cb11103d5ca366a5a6d}{\index{Data\-Base@{Data\-Base}!host@{host}}
+\index{host@{host}!DataBase@{Data\-Base}}
+\subsubsection[{host}]{\setlength{\rightskip}{0pt plus 5cm}const host = \char`\"{}localhost\char`\"{}}}\label{class_data_base_a657433cc10254cb11103d5ca366a5a6d}
+
+
+Hard coded S\-Q\-L variable for connection. 
+
+They are hard coded into the file for security and modularity. These constant variables are used for connecting to My\-S\-Q\-L. \hypertarget{class_data_base_afea42faad022b77d80bc1c081dad5815}{\index{Data\-Base@{Data\-Base}!pass@{pass}}
+\index{pass@{pass}!DataBase@{Data\-Base}}
+\subsubsection[{pass}]{\setlength{\rightskip}{0pt plus 5cm}const pass = \char`\"{}\char`\"{}}}\label{class_data_base_afea42faad022b77d80bc1c081dad5815}
+
+
+Hard coded S\-Q\-L variable for connection. 
+
+They are hard coded into the file for security and modularity. These constant variables are used for connecting to My\-S\-Q\-L. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Data\-Base.\-php\end{DoxyCompactItemize}
